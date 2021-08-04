@@ -1,24 +1,47 @@
 {
-  "name": "postcss-tailwind-taro",
+  "name": "taro-plugin-tailwind-weapp",
   "version": "0.0.1",
-  "description": "adapt tailwind in taro",
-  "main": "index.js",
+  "description": "a taro plugin to use tailwind.css in taro",
+  "main": "dist/index.js",
+  "private": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "clean": "rimraf dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wenxiangdong/postcss-tailwind-taro.git"
+    "url": "git+https://github.com/wenxiangdong/tarojs-plugin-tailwind.git"
   },
+  "files": [
+    "dist",
+    "package.json",
+    "tailwind.config.js"
+  ],
   "keywords": [
     "tailwind",
     "taro",
-    "weapp"
+    "miniprogram"
   ],
   "author": "wenxiangdong",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wenxiangdong/postcss-tailwind-taro/issues"
+    "url": "https://github.com/wenxiangdong/tarojs-plugin-tailwind/issues"
   },
-  "homepage": "https://github.com/wenxiangdong/postcss-tailwind-taro#readme"
+  "homepage": "https://github.com/wenxiangdong/tarojs-plugin-tailwind#readme",
+  "dependencies": {
+    "postcss-loader": "^4.3.0",
+    "tailwindcss": "^2.2.7"
+  },
+  "devDependencies": {
+    "@tarojs/service": "^3.3.1",
+    "@types/node": "^16.4.10",
+    "@types/webpack-chain": "^5.2.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.3"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
