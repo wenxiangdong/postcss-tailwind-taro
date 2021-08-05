@@ -1,6 +1,6 @@
 {
   "name": "taro-plugin-tailwind-weapp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a taro plugin to use tailwind.css in taro",
   "main": "dist/index.js",
   "private": false,
